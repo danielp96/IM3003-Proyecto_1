@@ -21,7 +21,7 @@ O2y = 0;
 name = '';
 
 % cambiar el numero para seleccionar animacion a realizar
-selector = 3;
+selector = 8;
 if (selector == 0)
     data = readtable('cuadrado.csv');
     name = 'cuadrado.gif';
@@ -48,9 +48,24 @@ elseif (selector == 4)
     title_name = 'Seno';
     
 elseif (selector == 5)
-    data = readtable('iniciales.csv');
-    name = 'iniciales.gif';
-    title_name = 'Iniciales';
+    data = readtable('inicial_c.csv');
+    name = 'inicial_c.gif';
+    title_name = 'Inicial C';
+    
+elseif (selector == 6)
+    data = readtable('inicial_v.csv');
+    name = 'inicial_v.gif';
+    title_name = 'Inicial V';
+    
+elseif (selector == 7)
+    data = readtable('inicial_p.csv');
+    name = 'inicial_p.gif';
+    title_name = 'Inicial P';
+    
+elseif (selector == 8)
+    data = readtable('inicial_d.csv');
+    name = 'inicial_d.gif';
+    title_name = 'Inicial D';
 end
 
 [bx, by] = point(data.theta1, L1, O1x+X0, O1y+Y0);
@@ -85,7 +100,7 @@ for id = 1:size(data,1)
     set(hh1(1), 'XData', [O1x+X0, bx(id)], 'YData', [O1y+Y0, by(id)])
     set(hh1(2), 'XData', [O2x+X0, dx(id)], 'YData', [O2y+Y0, dy(id)])
     set(hh1(3), 'XData', [bx(id), px(id)], 'YData', [by(id), py(id)])
-    set(hh1(4), 'XData', [dx(id), px2(id)], 'YData', [dy(id), py2(id)])
+    set(hh1(4), 'XData', [dx(id), px(id)], 'YData', [dy(id), py(id)])
     
     addpoints(an, px(id),  py(id));
     
