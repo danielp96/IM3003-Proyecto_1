@@ -23,48 +23,48 @@ name = '';
 % cambiar el numero para seleccionar animacion a realizar
 selector = 8;
 if (selector == 0)
-    data = readtable('cuadrado.csv');
-    name = 'cuadrado.gif';
+    data = readtable('csv/cuadrado.csv');
+    name = 'gif/cuadrado.gif';
     title_name = 'Cuadrado';
     
 elseif (selector == 1)
-    data = readtable('triangulo.csv');
-    name = 'triangulo.gif';
+    data = readtable('csv/triangulo.csv');
+    name = 'gif/triangulo.gif';
     title_name = 'Triangulo';
     
 elseif (selector == 2)
-    data = readtable('circulo.csv');
-    name = 'circulo.gif';
+    data = readtable('csv/circulo.csv');
+    name = 'gif/circulo.gif';
     title_name = 'Circulo';
     
 elseif (selector == 3)
-    data = readtable('uvg.csv');
-    name = 'uvg.gif';
+    data = readtable('csv/uvg.csv');
+    name = 'gif/uvg.gif';
     title_name = 'UVG';
     
 elseif (selector == 4)
-    data = readtable('seno.csv');
-    name = 'seno.gif';
+    data = readtable('csv/seno.csv');
+    name = 'gif/seno.gif';
     title_name = 'Seno';
     
 elseif (selector == 5)
-    data = readtable('inicial_c.csv');
-    name = 'inicial_c.gif';
+    data = readtable('csv/inicial_c.csv');
+    name = 'gif/inicial_c.gif';
     title_name = 'Inicial C';
     
 elseif (selector == 6)
-    data = readtable('inicial_v.csv');
-    name = 'inicial_v.gif';
+    data = readtable('csv/inicial_v.csv');
+    name = 'gif/inicial_v.gif';
     title_name = 'Inicial V';
     
 elseif (selector == 7)
-    data = readtable('inicial_p.csv');
-    name = 'inicial_p.gif';
+    data = readtable('csv/inicial_p.csv');
+    name = 'gif/inicial_p.gif';
     title_name = 'Inicial P';
     
 elseif (selector == 8)
-    data = readtable('inicial_d.csv');
-    name = 'inicial_d.gif';
+    data = readtable('csv/inicial_d.csv');
+    name = 'gif/inicial_d.gif';
     title_name = 'Inicial D';
 end
 
